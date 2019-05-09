@@ -7,82 +7,88 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>New web development for dinosaurs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <nav role="navigation">
-    <ul>
-      <li>
-        <a href="#">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
       </li>
-      <li>
-        <a href="#">Info</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info</a>
       </li>
-      <li>
-        <a href="#">About</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
       </li>
     </ul>
-    <form>
-      <input type="text" placeholder="Search" aria-label="Search">
-      <button type="submit">Search</button>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </nav>
   <main role="main">
-    <section class="hero">
-      <h1>Hello there!</h1>
-      <p>General info about the page goes here</p>
-      <p><a href="#">Learn more</a></p>
+    <section class="jumbotron">
+      <h1 class="display-4">Hello there!</h1>
+      <p class="lead">General info about the page goes here</p>
+      <p><a class="btn btn-primary btn-lg" href="#">Learn more</a></p>
     </section>
-    <section class="grid">
-      <article class="column">
-        <h2>First Heading</h2>
-        <p>Article content goes here</p>
-        <p><a href="#">View details</a></p>
-      </article>
-      <article class="column">
-        <h2>Second Heading</h2>
-        <p>Article content goes here</p>
-        <p><a href="#">View details</a></p>
-      </article>
-      <article class="column">
-        <h2>Third Heading</h2>
-        <p>Article content goes here</p>
-        <ul role="tablist">
-          <li>
-            <a data-toggle="tab" id="windows-tab" href="#windows" role="tab" aria-controls="windows"
-              aria-selected="true">Windows</a>
-          </li>
-          <li>
-            <a data-toggle="tab" id="mac-tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Mac</a>
-          </li>
-          <li>
-            <a data-toggle="tab" id="linux-tab" href="#linux" role="tab" aria-controls="linux"
-              aria-selected="false">Linux</a>
-          </li>
-        </ul>
-        <div>
-          <div id="windows" role="tabpanel" aria-labelledby="windows-tab">
-            <img class="img-fluid" src="http://1000logos.net/wp-content/uploads/2017/04/Microsoft-Logo.png"
-              alt="microsoft logo">
-            ...
+    <section class="container">
+      <div class="row">
+        <article class="col-4">
+          <h2>First Heading</h2>
+          <p>Article content goes here</p>
+          <p><a href="#">View details</a></p>
+        </article>
+        <article class="col-4">
+          <h2>Second Heading</h2>
+          <p>Article content goes here</p>
+          <p><a href="#">View details</a></p>
+        </article>
+        <article class="col-4">
+          <h2>Third Heading</h2>
+          <p>Article content goes here</p>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" id="windows-tab" href="#windows" role="tab"
+                aria-controls="windows" aria-selected="true">Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" id="mac-tab" href="#mac" role="tab" aria-controls="mac"
+                aria-selected="false">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" id="linux-tab" href="#linux" role="tab" aria-controls="linux"
+                aria-selected="false">Linux</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+              <img class="img-fluid" src="http://1000logos.net/wp-content/uploads/2017/04/Microsoft-Logo.png"
+                alt="microsoft logo">
+              ...
+            </div>
+            <div class="tab-pane fade" id="mac" role="tabpanel" aria-labelledby="mac-tab">
+              <img class="img-fluid" src="https://i.ytimg.com/vi/ipOzBWuYZvg/maxresdefault.jpg" alt="apple logo">
+              ...
+            </div>
+            <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+              <img class="img-fluid" src="https://noware.tech/wp-content/uploads/sites/140/2018/04/linux-1024x565.jpg"
+                alt="linux logo">
+              ...
+            </div>
           </div>
-          <div id="mac" role="tabpanel" aria-labelledby="mac-tab">
-            <img src="https://i.ytimg.com/vi/ipOzBWuYZvg/maxresdefault.jpg" alt="apple logo">
-            ...
-          </div>
-          <div id="linux" role="tabpanel" aria-labelledby="linux-tab">
-            <img src="https://noware.tech/wp-content/uploads/sites/140/2018/04/linux-1024x565.jpg" alt="linux logo">
-            ...
-          </div>
-        </div>
-        <p><a href="#">View details</a></p>
-      </article>
+          <p><a href="#">View details</a></p>
+        </article>
+      </div>
     </section>
   </main>
-  <footer role="contentinfo">
+  <footer class="navbar navbar-dark bg-secondary" role="contentinfo">
     <p>Copyright info goes here</p>
   </footer>
 </body>
