@@ -50,6 +50,34 @@
       <article class="column">
         <h2>Third Heading</h2>
         <p>Article content goes here</p>
+        <ul role="tablist">
+          <li>
+            <a data-toggle="tab" id="windows-tab" href="#windows" role="tab" aria-controls="windows"
+              aria-selected="true">Windows</a>
+          </li>
+          <li>
+            <a data-toggle="tab" id="mac-tab" href="#mac" role="tab" aria-controls="mac" aria-selected="false">Mac</a>
+          </li>
+          <li>
+            <a data-toggle="tab" id="linux-tab" href="#linux" role="tab" aria-controls="linux"
+              aria-selected="false">Linux</a>
+          </li>
+        </ul>
+        <div>
+          <div id="windows" role="tabpanel" aria-labelledby="windows-tab">
+            <img class="img-fluid" src="http://1000logos.net/wp-content/uploads/2017/04/Microsoft-Logo.png"
+              alt="microsoft logo">
+            ...
+          </div>
+          <div id="mac" role="tabpanel" aria-labelledby="mac-tab">
+            <img src="https://i.ytimg.com/vi/ipOzBWuYZvg/maxresdefault.jpg" alt="apple logo">
+            ...
+          </div>
+          <div id="linux" role="tabpanel" aria-labelledby="linux-tab">
+            <img src="https://noware.tech/wp-content/uploads/sites/140/2018/04/linux-1024x565.jpg" alt="linux logo">
+            ...
+          </div>
+        </div>
         <p><a href="#">View details</a></p>
       </article>
     </section>
